@@ -1,4 +1,11 @@
 <h1>This is the content of the App Componenrserver</h1>
 <app-login></app-login>
 <h1>Hello,{{name}}, Age : {{age}}</h1>
+<select (change)="onChange()">
+    <option *ngFor="let color of colors">
+       {{color}}
+    </option>
+</select>
 <input type="text" [value]="name">
+<img [src]="source">
+<input type="button" value="Click Hete" (click)="myFunction()">
